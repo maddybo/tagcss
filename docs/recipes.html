@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" data-accent="green">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TagCss semantic HTML recipes without classes.">
+    <title>TagCss Recipes</title>
+    <link rel="stylesheet" href="../dist/tagcss.css">
+  </head>
+  <body>
+    <a href="#main">Skip to content</a>
+
+    <header>
+      <a href="../index.html">TagCss</a>
+      <nav aria-label="Main navigation">
+        <a href="../index.html">Demo</a>
+        <a href="#login" aria-current="page">Recipes</a>
+        <a href="#settings">Settings</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <header>
+        <h1>Semantic recipes without classes.</h1>
+        <p>Copy the structure, keep the tags meaningful, and let TagCss provide the baseline interface.</p>
+      </header>
+
+      <section id="login">
+        <header>
+          <h2>Login form</h2>
+          <p>A compact authentication form using only form, label, input, and button elements.</p>
+        </header>
+        <form>
+          <label>
+            Email
+            <input type="email" autocomplete="email" required>
+          </label>
+          <label>
+            Password
+            <input type="password" autocomplete="current-password" required>
+          </label>
+          <label>
+            <input type="checkbox">
+            Keep me signed in
+          </label>
+          <button>Sign in</button>
+        </form>
+      </section>
+
+      <section id="pricing">
+        <header>
+          <h2>Pricing table</h2>
+          <p>Simple tabular pricing stays readable and scrolls safely on smaller screens.</p>
+        </header>
+        <table>
+          <caption>Plans for small teams</caption>
+          <thead>
+            <tr>
+              <th scope="col">Plan</th>
+              <th scope="col">Best for</th>
+              <th scope="col">Price</th>
+              <th scope="col">Limit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Starter</th>
+              <td>Solo projects</td>
+              <td>$9</td>
+              <td>3 sites</td>
+            </tr>
+            <tr>
+              <th scope="row">Team</th>
+              <td>Small teams</td>
+              <td>$29</td>
+              <td>20 sites</td>
+            </tr>
+            <tr>
+              <th scope="row">Scale</th>
+              <td>Growing products</td>
+              <td>$79</td>
+              <td>Unlimited</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <article id="docs">
+        <header>
+          <h2>Documentation article</h2>
+          <p>Articles can contain prose, code, lists, definitions, and metadata without extra wrappers.</p>
+        </header>
+        <p>Start with a meaningful heading and keep paragraphs short. TagCss constrains line length and spacing for comfortable reading.</p>
+        <ol type="1">
+          <li>Install the package.</li>
+          <li>Link the stylesheet.</li>
+          <li>Write semantic HTML.</li>
+        </ol>
+        <pre><code>&lt;link rel="stylesheet" href="/dist/tagcss.css"&gt;</code></pre>
+        <footer>
+          <small>Recipe: documentation</small>
+          <a href="#main">Back to top</a>
+        </footer>
+      </article>
+
+      <section id="settings">
+        <header>
+          <h2>Settings page</h2>
+          <p>Fieldsets and wrapped labels make small settings screens work without layout classes.</p>
+        </header>
+        <form aria-busy="false">
+          <fieldset>
+            <legend>Preferences</legend>
+            <label>
+              Display name
+              <input type="text" value="Ada Lovelace" required>
+            </label>
+            <label>
+              Workspace slug
+              <input type="text" value="analytical-engine" readonly>
+            </label>
+            <label>
+              Default theme
+              <select>
+                <option>System</option>
+                <option>Light</option>
+                <option>Dark</option>
+              </select>
+            </label>
+            <label>
+              <input type="checkbox" checked>
+              Email me product updates
+            </label>
+          </fieldset>
+          <p role="status">Settings are up to date.</p>
+          <button>Save settings</button>
+        </form>
+      </section>
+
+      <section id="dashboard">
+        <header>
+          <h2>Dashboard summary</h2>
+          <p>Use sections and asides for simple operational pages.</p>
+        </header>
+        <article>
+          <h3>Weekly usage</h3>
+          <p><strong>8,420</strong> page views across documentation and examples.</p>
+          <meter value="0.82">82%</meter>
+        </article>
+        <aside>
+          <h3>Note</h3>
+          <p>This is intentionally not a full dashboard component. It is a semantic starting point.</p>
+        </aside>
+      </section>
+
+      <section id="newsletter">
+        <header>
+          <h2>Newsletter form</h2>
+          <p>A small content form using native validation and status messaging.</p>
+        </header>
+        <form>
+          <label>
+            Email address
+            <input type="email" placeholder="you@example.com" required>
+          </label>
+          <button>Subscribe</button>
+          <p aria-live="polite">No JavaScript is required for this styling layer.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Recipes use semantic HTML and TagCss only.</p>
+    </footer>
+  </body>
+</html>

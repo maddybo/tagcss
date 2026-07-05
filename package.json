@@ -1,0 +1,54 @@
+{
+  "name": "tagcss",
+  "version": "0.1.0",
+  "description": "A classless CSS mini-framework that styles semantic HTML into beautiful responsive UI.",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "classless",
+    "semantic-html",
+    "framework",
+    "design-system",
+    "forms",
+    "responsive"
+  ],
+  "homepage": "https://github.com/tagcss/tagcss#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tagcss/tagcss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tagcss/tagcss/issues"
+  },
+  "main": "dist/tagcss.css",
+  "style": "dist/tagcss.css",
+  "exports": {
+    ".": "./dist/tagcss.css",
+    "./css": "./dist/tagcss.css",
+    "./min": "./dist/tagcss.min.css",
+    "./layered": "./dist/tagcss.layered.css",
+    "./resetless": "./dist/tagcss.resetless.css",
+    "./resetless-min": "./dist/tagcss.resetless.min.css",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "assets",
+    "dist",
+    "src",
+    "docs",
+    "scripts",
+    "README.md",
+    "index.html",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "minify": "node scripts/build.mjs",
+    "dev": "python3 -m http.server 4173",
+    "test:visual": "playwright test",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0"
+  }
+}

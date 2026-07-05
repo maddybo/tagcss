@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en" data-accent="blue">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TagCss demo page using semantic HTML without classes.">
+    <title>TagCss Demo</title>
+    <link rel="stylesheet" href="dist/tagcss.css">
+  </head>
+  <body>
+    <a href="#main">Skip to content</a>
+
+    <header>
+      <a href="#">TagCss</a>
+      <nav aria-label="Main navigation">
+        <a href="#main" aria-current="page">Home</a>
+        <a href="#typography">Typography</a>
+        <a href="#forms">Forms</a>
+        <a href="#data">Data</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <header>
+        <h1>TagCss turns plain semantic HTML into a calm interface.</h1>
+        <p>Use native tags, meaningful attributes, and browser behavior. The stylesheet handles the first layer of visual design.</p>
+        <nav aria-label="Hero links">
+          <a href="#forms">Forms</a>
+          <a href="#data">Tables</a>
+          <a href="docs/recipes.html">Recipes</a>
+        </nav>
+      </header>
+
+      <section>
+        <header>
+          <h1>Write semantic HTML. Get beautiful UI for free.</h1>
+          <p>TagCss styles native HTML elements directly, so a plain document becomes a responsive interface without utility classes, component classes, or JavaScript.</p>
+        </header>
+        <menu>
+          <li><a href="#forms">Try the form</a></li>
+          <li><button type="button" popovertarget="demo-popover">Open popover</button></li>
+          <li><button type="button" aria-busy="true">Saving</button></li>
+        </menu>
+        <div id="demo-popover" popover>
+          <h2>Native popover</h2>
+          <p>This panel is styled through the <code>[popover]</code> attribute, not a class.</p>
+        </div>
+      </section>
+
+      <article id="typography">
+        <header>
+          <h2>Readable articles</h2>
+          <p><time datetime="2026-07-04">July 4, 2026</time> by a semantic HTML author</p>
+        </header>
+        <p>TagCss gives headings, paragraphs, links, lists, quotes, and code calm defaults. It is intended for people who can write meaningful HTML but do not want to design every detail from scratch.</p>
+        <p>Use <strong>strong text</strong>, <em>emphasis</em>, <mark>highlighting</mark>, <abbr title="Accessible Rich Internet Applications">ARIA</abbr>, and <a href="https://developer.mozilla.org/">regular links</a> as you normally would.</p>
+        <blockquote>
+          <p>Semantic markup should be enough to create a useful first version of an interface.</p>
+        </blockquote>
+        <h3>Lists and definitions</h3>
+        <ul>
+          <li>No component class required.</li>
+          <li>Responsive spacing and readable line length.</li>
+          <li>Accessible focus states by default.</li>
+        </ul>
+        <dl>
+          <dt>API</dt>
+          <dd>HTML tags and meaningful attributes.</dd>
+          <dt>Output</dt>
+          <dd>A lightweight, modern page with native behavior intact.</dd>
+        </dl>
+        <pre><code>&lt;main&gt;
+  &lt;section&gt;
+    &lt;h1&gt;Hello TagCss&lt;/h1&gt;
+    &lt;p&gt;This page has no classes.&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/main&gt;</code></pre>
+        <p>Press <kbd>Tab</kbd> to inspect focus styles. Inline output can look like <samp>Ready</samp>.</p>
+        <footer>
+          <small>Updated <time datetime="2026-07-04">July 4, 2026</time></small>
+          <a href="#main">Back to top</a>
+        </footer>
+      </article>
+
+      <section>
+        <header>
+          <h2>Media and side notes</h2>
+          <p>Figures, images, embedded media, and asides stay inside their containers and keep comfortable spacing.</p>
+        </header>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Laptop showing code on a desk">
+          <figcaption>A normal figure with a responsive image and caption.</figcaption>
+        </figure>
+        <aside>
+          <h3>Design note</h3>
+          <p>This aside is a native <code>aside</code> element. TagCss treats it as a quiet callout without requiring a card class.</p>
+        </aside>
+      </section>
+
+      <section id="forms">
+        <header>
+          <h2>Forms without form classes</h2>
+          <p>Labels can wrap controls, required fields show useful states, and buttons get practical defaults.</p>
+        </header>
+        <form>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" autocomplete="current-password" minlength="8" required>
+          </label>
+          <fieldset>
+            <legend>Profile</legend>
+            <label>
+              Display name
+              <input type="text" name="name" placeholder="Ada Lovelace" required>
+            </label>
+            <label>
+              Account ID
+              <input type="text" name="account" value="TC-001" readonly>
+            </label>
+            <label>
+              Website
+              <input type="url" name="website" placeholder="https://example.com" aria-invalid="true">
+            </label>
+            <label>
+              Plan
+              <select name="plan">
+                <option>Starter</option>
+                <option>Team</option>
+                <option>Enterprise</option>
+              </select>
+            </label>
+            <label>
+              Launch date
+              <input type="date" name="launch">
+            </label>
+            <label>
+              Accent color
+              <input type="color" name="color" value="#4763ff">
+            </label>
+            <label>
+              Upload avatar
+              <input type="file" name="avatar">
+            </label>
+            <label>
+              Confidence
+              <input type="range" name="confidence" min="0" max="100" value="70">
+            </label>
+            <label>
+              <input type="checkbox" name="terms" required>
+              I agree to receive product updates.
+            </label>
+            <label>
+              <input type="radio" name="contact" checked>
+              Contact me by email.
+            </label>
+          </fieldset>
+          <label>
+            Notes
+            <textarea name="notes" placeholder="Tell us what you are building"></textarea>
+          </label>
+          <progress value="65" max="100">65%</progress>
+          <meter value="0.7">70%</meter>
+          <output aria-live="polite">Draft saved</output>
+          <p role="alert">The website field is marked invalid to demonstrate ARIA error styling.</p>
+          <menu>
+            <li><button type="submit">Create account</button></li>
+            <li><button type="reset">Reset</button></li>
+            <li><button type="button" aria-disabled="true">Disabled action</button></li>
+          </menu>
+        </form>
+      </section>
+
+      <section id="data">
+        <header>
+          <h2>Tables and disclosure</h2>
+          <p>Native data views and interactive elements get enough styling to be useful in documentation and small tools.</p>
+        </header>
+        <table>
+          <caption>Example release checklist</caption>
+          <thead>
+            <tr>
+              <th scope="col">Area</th>
+              <th scope="col">Status</th>
+              <th scope="col">Owner</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Tokens</th>
+              <td>Ready</td>
+              <td>Design</td>
+            </tr>
+            <tr>
+              <th scope="row">Forms</th>
+              <td>In review</td>
+              <td>Frontend</td>
+            </tr>
+            <tr>
+              <th scope="row">Docs</th>
+              <td>Ready</td>
+              <td>Writing</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row">Total</th>
+              <td colspan="2">3 areas</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <details open>
+          <summary>Why no classes?</summary>
+          <p>TagCss is optimized for simple pages where HTML semantics should carry the design. You can still add your own CSS on top when a product needs custom components.</p>
+        </details>
+        <details>
+          <summary>Does it need JavaScript?</summary>
+          <p>No. The framework is a single CSS file and keeps native browser behavior intact.</p>
+        </details>
+
+        <dialog open>
+          <h2>Demo dialog</h2>
+          <p>This open dialog shows default modal styling. In production, open and close it with native dialog APIs.</p>
+          <form method="dialog">
+            <button>Close</button>
+          </form>
+        </dialog>
+      </section>
+    </main>
+
+    <footer>
+      <p>TagCss is a classless CSS mini-framework for semantic HTML.</p>
+    </footer>
+  </body>
+</html>
