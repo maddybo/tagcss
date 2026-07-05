@@ -12,13 +12,13 @@
     "forms",
     "responsive"
   ],
-  "homepage": "https://github.com/tagcss/tagcss#readme",
+  "homepage": "https://github.com/maddybo/tagcss#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tagcss/tagcss.git"
+    "url": "git+https://github.com/maddybo/tagcss.git"
   },
   "bugs": {
-    "url": "https://github.com/tagcss/tagcss/issues"
+    "url": "https://github.com/maddybo/tagcss/issues"
   },
   "main": "dist/tagcss.css",
   "style": "dist/tagcss.css",
