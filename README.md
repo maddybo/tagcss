@@ -19,19 +19,19 @@ The project intentionally does not provide utility classes such as `.btn`, `.car
 Install from npm:
 
 ```sh
-npm install tagcss
+npm install @maddybo/tagcss
 ```
 
 Use it in HTML:
 
 ```html
-<link rel="stylesheet" href="node_modules/tagcss/dist/tagcss.css">
+<link rel="stylesheet" href="node_modules/@maddybo/tagcss/dist/tagcss.css">
 ```
 
 Use a CDN after publishing:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/tagcss@0.1.0/dist/tagcss.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@maddybo/tagcss@0.1.0/dist/tagcss.min.css">
 ```
 
 For local development, you can also copy or reference `dist/tagcss.css` directly:

@@ -1,5 +1,5 @@
 {
-  "name": "tagcss",
+  "name": "@maddybo/tagcss",
   "version": "0.1.0",
   "description": "A classless CSS mini-framework that styles semantic HTML into beautiful responsive UI.",
   "license": "MIT",
