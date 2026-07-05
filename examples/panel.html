@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" data-accent="blue">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TagCss admin panel layout example.">
+    <title>Panel Example - TagCss</title>
+    <link rel="stylesheet" href="../dist/tagcss.css">
+  </head>
+  <body>
+    <a href="#main">Skip to content</a>
+
+    <header>
+      <a href="../index.html">TagCss</a>
+      <nav aria-label="Panel navigation">
+        <a href="#overview" aria-current="page">Overview</a>
+        <a href="#orders">Orders</a>
+        <a href="#settings">Settings</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <header id="overview">
+        <h1>Operations panel</h1>
+        <p>Track revenue, order health, support load, and account settings with native HTML elements.</p>
+        <menu>
+          <li><button type="button">New report</button></li>
+          <li><button type="button">Export CSV</button></li>
+          <li><button type="button" aria-busy="true">Syncing</button></li>
+        </menu>
+      </header>
+
+      <section aria-label="Key metrics">
+        <article>
+          <h2>Revenue</h2>
+          <p><strong>$48,240</strong></p>
+          <p><small>Up 12% from last month</small></p>
+          <meter value="0.72">72%</meter>
+        </article>
+        <article>
+          <h2>Orders</h2>
+          <p><strong>1,284</strong></p>
+          <p><small>93 awaiting fulfillment</small></p>
+          <progress value="68" max="100">68%</progress>
+        </article>
+        <article>
+          <h2>Support</h2>
+          <p><strong>17 tickets</strong></p>
+          <p><small>4 marked urgent</small></p>
+          <p role="status">Queue is stable</p>
+        </article>
+      </section>
+
+      <section id="orders">
+        <header>
+          <h2>Recent orders</h2>
+          <p>Use tables for operational data that needs scanning and comparison.</p>
+        </header>
+        <table>
+          <caption>Latest customer orders</caption>
+          <thead>
+            <tr>
+              <th scope="col">Order</th>
+              <th scope="col">Customer</th>
+              <th scope="col">Status</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">#1842</th>
+              <td>North Studio</td>
+              <td>Paid</td>
+              <td>$420.00</td>
+            </tr>
+            <tr>
+              <th scope="row">#1841</th>
+              <td>Blue Finch</td>
+              <td>Review</td>
+              <td>$138.00</td>
+            </tr>
+            <tr>
+              <th scope="row">#1840</th>
+              <td>Acme Labs</td>
+              <td>Fulfilled</td>
+              <td>$912.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="settings">
+        <header>
+          <h2>Workspace settings</h2>
+          <p>A compact settings form with labels, fieldsets, selects, and native validation.</p>
+        </header>
+        <form>
+          <label>
+            Workspace name
+            <input name="workspace" value="TagCss Studio" required>
+          </label>
+          <label>
+            Billing email
+            <input type="email" name="email" value="billing@example.com" required>
+          </label>
+          <fieldset>
+            <legend>Notifications</legend>
+            <label>
+              <input type="checkbox" checked>
+              Send weekly summaries
+            </label>
+            <label>
+              <input type="checkbox">
+              Alert on failed payments
+            </label>
+          </fieldset>
+          <label>
+            Default view
+            <select name="view">
+              <option>Overview</option>
+              <option>Orders</option>
+              <option>Support</option>
+            </select>
+          </label>
+          <menu>
+            <li><button>Save settings</button></li>
+            <li><button type="reset">Reset</button></li>
+          </menu>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

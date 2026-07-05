@@ -131,6 +131,14 @@ TagCss includes defaults for:
 
 The demo includes `docs/recipes.html` with copyable examples for login forms, pricing tables, documentation articles, settings pages, dashboard summaries, and newsletter forms. These recipes use tags and attributes only, not classes.
 
+## Layout Examples
+
+Ready-made page layouts are available in `examples/`:
+
+- `examples/panel.html`: admin and operations panel
+- `examples/blog.html`: article and blog archive
+- `examples/product.html`: product page with plans and contact form
+
 ## When to use TagCss
 
 Use TagCss for documentation, prototypes, internal tools, small SaaS pages, content sites, demos, admin pages, and forms where semantic HTML should look good immediately.

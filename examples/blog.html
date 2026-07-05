@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" data-accent="green">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TagCss blog layout example.">
+    <title>Blog Example - TagCss</title>
+    <link rel="stylesheet" href="../dist/tagcss.css">
+  </head>
+  <body>
+    <a href="#main">Skip to content</a>
+
+    <header>
+      <a href="../index.html">TagCss Journal</a>
+      <nav aria-label="Blog navigation">
+        <a href="#latest" aria-current="page">Latest</a>
+        <a href="#archive">Archive</a>
+        <a href="#subscribe">Subscribe</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <header>
+        <h1>Notes on semantic interfaces</h1>
+        <p>Articles, essays, release notes, and long-form documentation can start with plain HTML and still feel complete.</p>
+      </header>
+
+      <article id="latest">
+        <header>
+          <h2>Designing a page before adding classes</h2>
+          <p><time datetime="2026-07-05">July 5, 2026</time> by Magda Bo</p>
+        </header>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Notebook, laptop, and coffee on a writing desk">
+          <figcaption>A content layout can be built from headings, paragraphs, figures, and asides.</figcaption>
+        </figure>
+        <p>Semantic HTML gives a document structure before visual decisions start. TagCss keeps that structure visible by styling the elements directly.</p>
+        <p>The result is useful for project notes, internal documentation, public blogs, and prototypes where readable content matters more than a bespoke component system.</p>
+        <blockquote>
+          <p>Good defaults make the first version of an interface easier to ship and easier to replace later.</p>
+        </blockquote>
+        <h3>What this layout uses</h3>
+        <ul>
+          <li>A site header with navigation.</li>
+          <li>An article with metadata, media, lists, and quotes.</li>
+          <li>An archive table and a native subscription form.</li>
+        </ul>
+        <footer>
+          <small>Filed under <a href="#archive">Design systems</a></small>
+        </footer>
+      </article>
+
+      <aside>
+        <h2>Editorial note</h2>
+        <p>This aside can hold author details, related links, sponsorship notes, or a short table of contents.</p>
+        <nav aria-label="Related links">
+          <a href="../docs/recipes.html">Recipes</a>
+          <a href="../index.html">Demo</a>
+        </nav>
+      </aside>
+
+      <section id="archive">
+        <header>
+          <h2>Archive</h2>
+          <p>A simple table works well when posts need dates, categories, and status.</p>
+        </header>
+        <table>
+          <caption>Recent posts</caption>
+          <thead>
+            <tr>
+              <th scope="col">Post</th>
+              <th scope="col">Category</th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><a href="#latest">Designing a page before adding classes</a></th>
+              <td>Design systems</td>
+              <td><time datetime="2026-07-05">Jul 5</time></td>
+            </tr>
+            <tr>
+              <th scope="row">Native forms are product UI</th>
+              <td>Forms</td>
+              <td><time datetime="2026-06-28">Jun 28</time></td>
+            </tr>
+            <tr>
+              <th scope="row">A quiet baseline for docs</th>
+              <td>Documentation</td>
+              <td><time datetime="2026-06-14">Jun 14</time></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="subscribe">
+        <header>
+          <h2>Subscribe</h2>
+          <p>Native form controls are enough for a compact newsletter signup.</p>
+        </header>
+        <form>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            <input type="checkbox" checked>
+            Send me new posts and release notes.
+          </label>
+          <button>Subscribe</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" data-accent="rose">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TagCss product page layout example.">
+    <title>Product Example - TagCss</title>
+    <link rel="stylesheet" href="../dist/tagcss.css">
+  </head>
+  <body>
+    <a href="#main">Skip to content</a>
+
+    <header>
+      <a href="../index.html">TagCss Store</a>
+      <nav aria-label="Product navigation">
+        <a href="#product" aria-current="page">Product</a>
+        <a href="#plans">Plans</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <header id="product">
+        <h1>Launch a clean product page with semantic HTML.</h1>
+        <p>Use sections, articles, figures, forms, tables, details, and buttons to build a realistic marketing or product page without component classes.</p>
+        <nav aria-label="Product actions">
+          <a href="#plans">View plans</a>
+          <a href="#contact">Contact sales</a>
+        </nav>
+      </header>
+
+      <section>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Team reviewing a product dashboard on laptops">
+          <figcaption>A full-width product visual can sit in a normal figure element.</figcaption>
+        </figure>
+      </section>
+
+      <section aria-label="Product benefits">
+        <article>
+          <h2>Fast prototypes</h2>
+          <p>Move from content to a usable page without waiting for a full design system.</p>
+        </article>
+        <article>
+          <h2>Native behavior</h2>
+          <p>Keep browser semantics, keyboard access, and ordinary HTML forms intact.</p>
+        </article>
+        <article>
+          <h2>Easy to replace</h2>
+          <p>Add custom CSS later when the product needs a more specific visual language.</p>
+        </article>
+      </section>
+
+      <section id="plans">
+        <header>
+          <h2>Plans</h2>
+          <p>A pricing table can stay readable with regular table markup.</p>
+        </header>
+        <table>
+          <caption>Product plans</caption>
+          <thead>
+            <tr>
+              <th scope="col">Plan</th>
+              <th scope="col">Best for</th>
+              <th scope="col">Price</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Starter</th>
+              <td>Solo projects</td>
+              <td>$9</td>
+              <td><button type="button">Choose</button></td>
+            </tr>
+            <tr>
+              <th scope="row">Team</th>
+              <td>Small teams</td>
+              <td>$29</td>
+              <td><button type="button">Choose</button></td>
+            </tr>
+            <tr>
+              <th scope="row">Business</th>
+              <td>Growing companies</td>
+              <td>$79</td>
+              <td><button type="button">Choose</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="faq">
+        <header>
+          <h2>Questions</h2>
+          <p>Use native disclosure widgets for compact product information.</p>
+        </header>
+        <details open>
+          <summary>Can this be customized?</summary>
+          <p>Yes. Add your own CSS after TagCss and override the custom properties or specific element styles.</p>
+        </details>
+        <details>
+          <summary>Does it require JavaScript?</summary>
+          <p>No. The examples use static HTML and CSS. Native elements such as details and form controls keep their browser behavior.</p>
+        </details>
+        <details>
+          <summary>Can I use it for an internal tool?</summary>
+          <p>Yes. Admin panels, docs, dashboards, and simple SaaS screens are a good fit.</p>
+        </details>
+      </section>
+
+      <section id="contact">
+        <header>
+          <h2>Contact sales</h2>
+          <p>A short form can complete the page without custom components.</p>
+        </header>
+        <form>
+          <label>
+            Work email
+            <input type="email" name="email" placeholder="you@company.com" required>
+          </label>
+          <label>
+            Team size
+            <select name="team-size">
+              <option>1-5</option>
+              <option>6-20</option>
+              <option>21-100</option>
+              <option>100+</option>
+            </select>
+          </label>
+          <label>
+            What are you building?
+            <textarea name="message" placeholder="Tell us about your project"></textarea>
+          </label>
+          <button>Send request</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
