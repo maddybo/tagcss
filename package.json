@@ -1,6 +1,6 @@
 {
   "name": "@maddybo/tagcss",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A classless CSS mini-framework that styles semantic HTML into clean responsive UI.",
   "license": "MIT",
   "keywords": [

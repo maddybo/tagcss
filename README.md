@@ -35,7 +35,7 @@ Use it in HTML:
 Use a CDN after publishing:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@maddybo/tagcss@0.1.1/dist/tagcss.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@maddybo/tagcss@0.1.2/dist/tagcss.min.css">
 ```
 
 For local development, you can also copy or reference `dist/tagcss.css` directly:
